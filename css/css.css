@@ -34,21 +34,21 @@ a {text-decoration: none;}
     list-style: none;
     display: inline;
 }
-ul {
-    margin: 40px 0 0 450px;
+.header-right div.icons {
+    margin: 30px 10% 0 0;
+    float: right;
 }
-li {
+.header-right li {
     margin: 0 3px;
 }
-li img {
+.header-right li img {
     border-radius: 50%;
 }
 
-/*Conteudo*/
+/*Conteudo index*/
 .content {
     height: 657px;
     width: 100%;
-    background-color: gray;
 }
 .img-gato {
     border-radius: 50%;
@@ -61,20 +61,19 @@ li img {
 #contentLeft {
     height: 657px;
     width: 50%;
-    background-color: #14001a;
     background-attachment: fixed;
     background-size: cover;
     float: left;
 }
 #cardLeft {
-    height: 460px;
+    height: 470px;
     width: 350px;
     border: 1px solid #2f003d;
     margin: 0 auto;
     margin-top: 40px;
     border-radius: 5px;
     background-position: center;
-    transition: 0.3s;
+    transition: 0.1s;
     background-size: cover;
 }
 #h1Left {
@@ -88,40 +87,34 @@ li img {
     color: #ffa600;
     font-family: 'Permanent Marker', cursive;
     text-align: left;
-    margin: 10px 25px 0 25px;  
-    opacity: 0;
-}
-/*Quando passar mouse no Billy*/
-#cardLeft:hover {
-    height: 460px;
-    width: 350px;
-    box-shadow: 2px 2px 60px black;
-}
-#cardLeft:hover #h1Left {
+    margin: 10px 25px 0 25px;
     display: none;
 }
+
+/*Quando passar mouse no Billy*/
+#cardLeft:hover {box-shadow: 2px 2px 60px black;}
+#cardLeft:hover #h1Left {display: none;}
 #cardLeft:hover #h3Left {
-    opacity: 1;
-    transition: 1s;
+    display: block;
+    
 }
 /*Parte da Azeitona*/
 #contentRight {
     height: 657px;
     width: 50%;
-    background-color: #fefff0;
-    float: right;
     background-attachment: fixed;
+    float: left;
 }
 #cardRight {
-    height: 460px;
+    height: 470px;
     width: 350px;
-    border: 1px solid #fefff0;
-    padding-top: 10px;
+    border: 1px solid rgb(144, 148, 91);
     margin: 0 auto;
     margin-top: 40px;
     border-radius: 5px;
     background-position: center;
-    transition: 0.3s;
+    transition: 0.1s;
+    background-size: cover;
 }
 #h1Right {
     color: #ff0055;
@@ -136,27 +129,17 @@ li img {
     font-size: 17px;
     text-align: left;
     margin: 10px 25px 0 25px;  
-    opacity: 0;
-}
-/*Quando passar o mouse na Azeitona*/
-#cardRight:hover {
-    height: 460px;
-    width: 350px;
-    box-shadow: 2px 2px 60px #001f05;
-}
-#cardRight:hover #h1Right {
     display: none;
 }
-#cardRight:hover #h3Right {
-    opacity: 1;
-    transition: 1s;
-}
+/*Quando passar o mouse na Azeitona*/
+#cardRight:hover {box-shadow: 2px 2px 60px #001f05;}
+#cardRight:hover #h1Right {display: none;}
+#cardRight:hover #h3Right {display: block;}
 
 /*Pagina do Billy*/
 #contentBilly {
     height: 657px;
     width: 100%;
-    background-color: #14001a;
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
@@ -179,7 +162,6 @@ li img {
 #contentAzeitona div{
     height: 657px;
     width: 1200px;
-    background-color: #fefff0;
     margin: 0 auto;
     padding: 30px;
 }
@@ -195,12 +177,19 @@ li img {
     position: relative;
     list-style: none;
     font-size: 20px;
-    float:left;
+    float: left;
+    margin: 32px 0 0 20%;
 }
 .footer #ul2 {
     list-style: none;
     font-size: 20px; 
-    float: left;
+    float: right;
+    margin: 32px 20% 0 0;
 }
- 
- a {color: white;}
+.footer li {
+    margin: 5px;
+}
+a {color: white;}
+.footer a:hover {
+    color: gray;
+}
