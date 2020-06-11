@@ -6,6 +6,7 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 a {text-decoration: none;}
 
@@ -59,7 +60,7 @@ a {text-decoration: none;}
 }
 /*Parte do Billy*/
 #contentLeft {
-    height: 657px;
+    height: 100%;
     width: 50%;
     background-attachment: fixed;
     background-size: cover;
@@ -138,32 +139,30 @@ a {text-decoration: none;}
 
 /*Pagina do Billy*/
 #contentBilly {
-    height: 657px;
+    height: 100%;
     width: 100%;
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
+    padding: 5% 0;
 }
 #contentBilly img {margin: -2px;}
-#contentBilly div{
-    height: 657px;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
+#contentBilly div {
+    text-align: center;
+    margin: 0 100px;
 }
 
 /*azeitona.html*/
 #contentAzeitona {
-    height: 657px;
+    height: 100%;
     width: 100%;
     background-color: #fefff0;
+    padding: 5% 0;
 }
 #contentAzeitona img {margin: -2px;}
-#contentAzeitona div{
-    height: 657px;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
+#contentAzeitona div {
+    text-align: center;
+    margin: 0 100px;
 }
 
 /*Rodapé*/
