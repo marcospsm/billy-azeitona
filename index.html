@@ -2,10 +2,20 @@
 <html>
 <head>
     <title> Billy & Azeitona </title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/css.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width">
 
 </head>
 <body>
+
     <!--Cabeçalho-->
     <div class="header">
         <div class="header-left">
@@ -27,31 +37,67 @@
 
     <!--Conteudo-->
     <div class="content">
-        <div id="contentLeft" style="background-image: url('img/backgroundbilly.png')">
-            <div id="cardLeft" style="background-image: url('img/billycard.png')">
+        <!--Billy-->
+        <div id="contentLeft">
+            <div id="cardLeft">
                 <a href="html/billy.html">
                     <img class="img-gato" src="img/billyicon.jpg" height="250" width="250">
                     <h1 id="h1Left">BILLY</h1>
-                    <h3 id="h3Left"> Oi eu sou o Billy, sou preto com olhos de fogo, gosto muito de comer e dormir, adoro um colo e carinho, sou brincalhão e também bravinho, gosto de morder, arranhar e vivo indo atras da Azeitona. ~Miau :3 </h3>
+                    <h3 class="h3-left"> Oi eu sou o Billy, sou preto com olhos de fogo, gosto muito de comer e dormir, adoro um colo e carinho, sou brincalhão e também bravinho, gosto de morder, arranhar e vivo indo atras da Azeitona. ~Miau :3 </h3>
                 </a>
             </div>   
-
-               
         </div>
 
-        <div id="contentRight"  style="background-image: url('img/backgroundazeitona.png')">
-            <div id="cardRight" style="background-image: url('img/backgroundazeitona.png')">
+        <!--Azeitona-->
+        <div id="contentRight">
+            <div id="cardRight">
                 <a href="html/azeitona.html">
-                <img class="img-gato" src="img/azeitonacard.jpg" height="250" width="250">
+                <img class="img-gato" src="img/azeitonaicon.jpg" height="250" width="250">
                 <h1 id="h1Right"> AZEITONA </h1>
-                <h3 id="h3Right"> Eu sou a Azeitona, por causa dos meus olhos... Adoro papinha de sache, caçar e participar das reuniões em família. Não gosto de colo e nem de contato físico, muito menos de quando o Billy me segue, sou brava e vivo reclamando. GRRRR >:( </h3>
+                <h3 class="h3-right"> Eu sou a Azeitona, por causa dos meus olhos... Adoro papinha de sache, caçar e participar das reuniões em família. Não gosto de colo e nem de contato físico, muito menos de quando o Billy me segue, sou brava e vivo reclamando. GRRRR >:( </h3>
                 </a>
             </div>
         </div>
     </div>
 
+    <!--mobile-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carrosel-mobile" style="background-image: url('img/billycard.png')">
+                <a id="iconMobile" href="html/billy.html">
+                <img class="img-gato" src="img/billyicon.jpg" height="250" width="250">
+                </a>
+                <h3 class="h3-left"> Oi eu sou o Billy, sou preto com olhos de fogo, gosto muito de comer e dormir, adoro um colo e carinho, sou brincalhão e também bravinho, gosto de morder, arranhar e vivo indo atras da Azeitona. ~Miau :3 </h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carrosel-mobile" style="background-image: url('img/azeitonacard.png')">
+                <a id="iconMobile" href="html/azeitona.html">
+                    <img class="img-gato" src="img/azeitonaicon.jpg" height="250" width="250">
+                </a>
+                <h3 class="h3-right">  Eu sou a Azeitona, por causa dos meus olhos... Adoro papinha de sache, caçar e participar das reuniões em família. Não gosto de colo e nem de contato físico, muito menos de quando o Billy me segue, sou brava e vivo reclamando. GRRRRR >:(  </h3>
+            </div>
+          </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
     <!--Rodapé-->
-    <div class="footer">
+    <div class="footer container">
+        <ul class="ul-mobile">
+            <a href="https://www.instagram.com/marcospsm1/" target="_blank"><li><img src="img/instagram.png" title="instagram" alt="instagram" height="30" width="30"></li></a>
+            <a href="https://twitter.com/salty1_" target="_blank"><li><img src="img/twitter.png" title="twitter" alt="twitter" height="30" width="30"></li></a>
+            <li><img src="img/mail.png" title="marcospaulosm2000@gmail.com" alt="email" height="30" width="30"></li></a>
+            <a href="https://github.com/marcospsm/" target="_blank"><li><img src="img/github.png" title="github" alt="github" height="30" width="30"></li></a>
+        </ul>
+
         <ul id="ul1">
             <li><a href="index.html"> Home </a></li>
             <li><a href="html/billy.html"> Billy </a></li>
@@ -64,5 +110,7 @@
             <li><a href="https://github.com/marcospsm/billy-azeitona/upload" target="_blank"> GitHub </a></li>
         </ul>
     </div>
+
+
 </body>
 </html>    

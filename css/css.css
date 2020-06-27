@@ -1,34 +1,31 @@
-@font-face {
-    font-family: PermanentMarker-Regular;
-    src: url('fonts/PermanentMarker-Regular.ttf');
-}
 
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: #292929 !important;
 }
-a {text-decoration: none;}
+a {text-decoration: none !important;}
 
 /*Cabeçalho*/
 .header {
     height: 99px;
-    width: 100%;
-    border-bottom :2px solid #292929;
-    background-color: #1c1c1c;
+    width: 100% !important;
+    border-bottom :2px solid #1c1c1c;
+    background-color: #292929;
 }
 .header-left {
     height: 99px;
-    width: 50%;
+    width: 40%;
     float: left;
 }
 .img-logo {
     border-radius: 50%;
-    margin: 5px 70px;
+    margin: 5px 15%;
 }
 .header-right {
     height: 99px;
-    width: 50%;
+    width: 60%;
     float: right;
 }
 .header-right ul li {
@@ -36,11 +33,11 @@ a {text-decoration: none;}
     display: inline;
 }
 .header-right div.icons {
-    margin: 30px 10% 0 0;
+    margin: 35px 9% 0 0;
     float: right;
 }
 .header-right li {
-    margin: 0 3px;
+    margin: 0 1px;
 }
 .header-right li img {
     border-radius: 50%;
@@ -49,19 +46,19 @@ a {text-decoration: none;}
 /*Conteudo index*/
 .content {
     height: 657px;
-    width: 100%;
+    width: 100% !important;
 }
 .img-gato {
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 10px;
 }
 /*Parte do Billy*/
 #contentLeft {
-    height: 100%;
+    height: 657px;
     width: 50%;
+    background-image: url(../img/backgroundbilly.png);
     background-attachment: fixed;
     background-size: cover;
     float: left;
@@ -73,9 +70,11 @@ a {text-decoration: none;}
     margin: 0 auto;
     margin-top: 40px;
     border-radius: 5px;
+    background-image: url(../img/billycard.png);
     background-position: center;
     transition: 0.1s;
     background-size: cover;
+    padding-top: 10px;
 }
 #h1Left {
     color: #ffa600;
@@ -84,27 +83,31 @@ a {text-decoration: none;}
     text-align: center;
     margin: 15px auto;
 }
-#h3Left {
+.h3-left {
     color: #ffa600;
     font-family: 'Permanent Marker', cursive;
-    text-align: left;
-    margin: 10px 25px 0 25px;
+    text-align: center;
+    margin: 0 auto;
     display: none;
+    font-size: 20px;
+    padding: 10px 10%;
 }
 
 /*Quando passar mouse no Billy*/
 #cardLeft:hover {box-shadow: 2px 2px 60px black;}
 #cardLeft:hover #h1Left {display: none;}
-#cardLeft:hover #h3Left {
-    display: block;
-    
-}
+#cardLeft:hover .h3-left {display: block;}
+
 /*Parte da Azeitona*/
 #contentRight {
     height: 657px;
     width: 50%;
+    background-image: url(../img/backgroundazeitona.png);
     background-attachment: fixed;
-    float: left;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    float: right;
 }
 #cardRight {
     height: 470px;
@@ -113,82 +116,140 @@ a {text-decoration: none;}
     margin: 0 auto;
     margin-top: 40px;
     border-radius: 5px;
+    background-image: url(../img/azeitonacard.png);
     background-position: center;
     transition: 0.1s;
     background-size: cover;
+    padding-top: 10px;
 }
 #h1Right {
-    color: #ff0055;
+    color: #1d4b16;
     font-size: 40px;
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     margin: 15px auto;
+    text-shadow: 1px #fefff0;
 }
-#h3Right {
-    color: #ff0055;
+.h3-right {
+    color: #1d4b16;
     font-family: 'Permanent Marker', cursive;
-    font-size: 17px;
-    text-align: left;
+    font-size: 20px;
+    text-align: center;
     margin: 10px 25px 0 25px;  
     display: none;
+    text-shadow: 1px 0 8px #fefff0;
 }
 /*Quando passar o mouse na Azeitona*/
 #cardRight:hover {box-shadow: 2px 2px 60px #001f05;}
 #cardRight:hover #h1Right {display: none;}
-#cardRight:hover #h3Right {display: block;}
+#cardRight:hover .h3-right {display: block;}
+
+/*index mobile*/
+.carousel-inner {
+    display: none;
+}
+.carrosel-mobile {
+    height: 800px;
+    width: 100% !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 25%;
+}
+
+@media screen and (max-width: 750px) {
+    .content {
+        display: none;
+    }
+    .carousel-inner {
+        display: flex;
+    }
+    .h3-left {
+        display: block;
+        font-size: 29px;
+    }
+    .h3-right {
+        display: block;
+        font-size: 27px;
+    }
+    .footer {
+        height: 300px !important;
+    }
+    .footer ul li {
+        font-size: 25px;
+    }
+    #ul2 {
+        display: none;
+    }
+    .ul-mobile {
+        display: flex !important;
+    }
+}
+@media screen and (max-width: 1050px) and (min-width:750px) {
+    .footer ul li {
+        font-size: 40px;
+    }
+}
 
 /*Pagina do Billy*/
 #contentBilly {
     height: 100%;
-    width: 100%;
+    width: 100% !important;
+    background-image: url(../img/backgroundbilly.png);
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
-    padding: 5% 0;
+    padding: 5% 10%;
 }
-#contentBilly img {margin: -2px;}
+#contentBilly img {margin: -3px;}
 #contentBilly div {
-    text-align: center;
-    margin: 0 100px;
+    text-align: left;
 }
 
 /*azeitona.html*/
 #contentAzeitona {
     height: 100%;
-    width: 100%;
-    background-color: #fefff0;
-    padding: 5% 0;
+    width: 100% !important;
+    padding: 5% 10%;
+    background-image: url(../img/backgroundazeitona.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
-#contentAzeitona img {margin: -2px;}
+#contentAzeitona img {margin: -3px;}
 #contentAzeitona div {
-    text-align: center;
-    margin: 0 100px;
+    text-align: left;
 }
 
 /*Rodapé*/
 .footer {
     height: 150px;
-    width: 100%;
+    width: 100% !important;
     background-color: #292929;
     border-top: 1px solid #1c1c1c;
+    padding: 2%;
 }
+.ul-mobile {
+    list-style: none;
+    margin: 20px 0 20% 0;
+    display: none;
+}
+.ul-mobile li {display: inline;}
 .footer #ul1 {
-    position: relative;
     list-style: none;
     font-size: 20px;
     float: left;
-    margin: 32px 0 0 20%;
 }
 .footer #ul2 {
     list-style: none;
-    font-size: 20px; 
+    font-size: 20px;
     float: right;
-    margin: 32px 20% 0 0;
 }
 .footer li {
-    margin: 5px;
+    margin: 0 5px;
 }
-a {color: white;}
+li a {color: white;}
 .footer a:hover {
     color: gray;
 }
