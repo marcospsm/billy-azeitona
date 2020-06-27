@@ -10,7 +10,7 @@ a {text-decoration: none !important;}
 /*Cabeçalho*/
 .header {
     height: 99px;
-    width: 100% !important;
+    width: 100%;
     border-bottom :2px solid #1c1c1c;
     background-color: #292929;
 }
@@ -46,7 +46,7 @@ a {text-decoration: none !important;}
 /*Conteudo index*/
 .content {
     height: 657px;
-    width: 100% !important;
+    width: 100%;
 }
 .img-gato {
     border-radius: 50%;
@@ -150,7 +150,7 @@ a {text-decoration: none !important;}
 }
 .carrosel-mobile {
     height: 800px;
-    width: 100% !important;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
@@ -172,18 +172,30 @@ a {text-decoration: none !important;}
         display: block;
         font-size: 27px;
     }
+    .content-billy img {
+        height:100px;
+        width: 100px;
+    }
+    .content-azeitona img {
+        height:100px;
+        width: 100px;
+    }
+
     .footer {
         height: 300px !important;
     }
     .footer ul li {
         font-size: 25px;
     }
-    #ul2 {
+    .ul2 {
         display: none;
     }
     .ul-mobile {
         display: flex !important;
     }
+
+    /*billy.html*/
+    
 }
 @media screen and (max-width: 1050px) and (min-width:750px) {
     .footer ul li {
@@ -192,40 +204,40 @@ a {text-decoration: none !important;}
 }
 
 /*Pagina do Billy*/
-#contentBilly {
+.content-billy {
     height: 100%;
-    width: 100% !important;
+    width: 100%;
     background-image: url(../img/backgroundbilly.png);
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
-    padding: 5% 10%;
+    padding: 5% 3%;
 }
-#contentBilly img {margin: -3px;}
-#contentBilly div {
+.content-billy img {margin: -3px;}
+.content-billy div {
     text-align: center;
 }
 
 /*azeitona.html*/
-#contentAzeitona {
+.content-azeitona {
     height: 100%;
-    width: 100% !important;
-    padding: 5% 10%;
+    width: 100%;
+    padding: 5% 3%;
     background-image: url(../img/backgroundazeitona.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
 }
-#contentAzeitona img {margin: -3px;}
-#contentAzeitona div {
+.content-azeitona img {margin: -3px;}
+.content-azeitona div {
     text-align: center;
 }
 
 /*Rodapé*/
 .footer {
     height: 150px;
-    width: 100% !important;
+    width: 100%;
     background-color: #292929;
     border-top: 1px solid #1c1c1c;
     padding: 2%;
@@ -236,12 +248,12 @@ a {text-decoration: none !important;}
     display: none;
 }
 .ul-mobile li {display: inline;}
-.footer #ul1 {
+.footer .ul1 {
     list-style: none;
     font-size: 20px;
     float: left;
 }
-.footer #ul2 {
+.footer .ul2 {
     list-style: none;
     font-size: 20px;
     float: right;
