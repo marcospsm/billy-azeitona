@@ -76,7 +76,7 @@ a {text-decoration: none !important;}
     background-size: cover;
     padding-top: 10px;
 }
-#h1Left {
+.h1-left {
     color: #ffa600;
     font-size: 50px;
     font-family: 'Permanent Marker', cursive;
@@ -95,7 +95,7 @@ a {text-decoration: none !important;}
 
 /*Quando passar mouse no Billy*/
 #cardLeft:hover {box-shadow: 2px 2px 60px black;}
-#cardLeft:hover #h1Left {display: none;}
+#cardLeft:hover .h1-left {display: none;}
 #cardLeft:hover .h3-left {display: block;}
 
 /*Parte da Azeitona*/
@@ -122,7 +122,7 @@ a {text-decoration: none !important;}
     background-size: cover;
     padding-top: 10px;
 }
-#h1Right {
+.h1-right {
     color: #1d4b16;
     font-size: 40px;
     font-family: 'Permanent Marker', cursive;
@@ -141,7 +141,7 @@ a {text-decoration: none !important;}
 }
 /*Quando passar o mouse na Azeitona*/
 #cardRight:hover {box-shadow: 2px 2px 60px #001f05;}
-#cardRight:hover #h1Right {display: none;}
+#cardRight:hover .h1-right {display: none;}
 #cardRight:hover .h3-right {display: block;}
 
 /*index mobile*/
@@ -172,11 +172,11 @@ a {text-decoration: none !important;}
         display: block;
         font-size: 27px;
     }
-    .content-billy img {
+    .content-billy .foto {
         height:100px;
         width: 100px;
     }
-    .content-azeitona img {
+    .content-azeitona .foto {
         height:100px;
         width: 100px;
     }
@@ -194,16 +194,67 @@ a {text-decoration: none !important;}
         display: flex !important;
     }
 
-    /*billy.html*/
-    
+    #fotoIgreja {
+        height: 302px;
+        width: 230px;
+    }
+    #fotoPizzaria {
+        height: 160px;
+        width: 300px;
+    }
+    #h3Billy, #h3Azeitona {
+        font-size: 15px;
+    }
+
 }
-@media screen and (max-width: 1050px) and (min-width:750px) {
+@media screen and (max-width: 1024px) and (min-width:750px) {
     .footer ul li {
         font-size: 40px;
     }
+    #fotoIgreja {
+        height: 740px;
+        width: 490px;
+    }
+    #fotoPizzaria {
+        height: 320px;
+        width: 600px;
+    }
+    .h1-left, .h1-right {
+        display: none;
+    }
+    .h3-left, .h3-right {
+        display: block;
+    }
 }
 
-/*Pagina do Billy*/
+/*pagina do billy*/
+.content-billy #imgGatoBilly {
+    margin: 0 auto;
+    box-shadow: 1px 1px 30px black;
+}
+#divBilly {
+    text-align: center;
+}
+#h3Billy {
+    display: block;
+    margin-top: 50px;
+}
+#fotoIgreja {
+    margin-top: 50px;
+    margin: 1px solid black;
+    box-shadow: 1px 1px 30px black;
+}
+.botao-billy {
+    background-color: orange;
+    width: 100px;
+    margin: 30px auto 30px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.botao-billy:hover {box-shadow: 1px 1px 30px black;}
+.botao-billy a {color: rgb(60, 10, 130);}
+
+/*Fotos do Billy*/
 .content-billy {
     height: 100%;
     width: 100%;
@@ -213,10 +264,37 @@ a {text-decoration: none !important;}
     background-size: cover;
     padding: 5% 3%;
 }
-.content-billy img {margin: -3px;}
+.content-billy img {margin: 0 -3px;}
 .content-billy div {
     text-align: center;
 }
+
+/*pagina da Azeitona*/
+.content-azeitona #imgGatoAzeitona {
+    margin: 0 auto;
+    box-shadow: 1px 1px 30px black;
+}
+#divAzeitona {
+    text-align: center;
+}
+#h3Azeitona {
+    display: block;
+    margin-top: 50px;
+}
+#fotoPizzaria {
+    margin-top: 50px;
+    margin: 1px solid black;
+    box-shadow: 1px 1px 30px black;
+}
+.botao-azeitona {
+    background-color: #1d4b16;
+    width: 100px;
+    margin: 30px auto 30px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.botao-azeitona:hover {box-shadow: 1px 1px 30px black;}
+.botao-azeitona a {color: #fefff0;}
 
 /*azeitona.html*/
 .content-azeitona {
@@ -229,7 +307,7 @@ a {text-decoration: none !important;}
     background-position: right;
     background-repeat: no-repeat;
 }
-.content-azeitona img {margin: -3px;}
+.content-azeitona img {margin: 0 -3px;}
 .content-azeitona div {
     text-align: center;
 }
@@ -237,7 +315,7 @@ a {text-decoration: none !important;}
 /*Rodapé*/
 .footer {
     height: 150px;
-    width: 100%;
+    width: 100% !important;
     background-color: #292929;
     border-top: 1px solid #1c1c1c;
     padding: 2%;
@@ -257,6 +335,9 @@ a {text-decoration: none !important;}
     list-style: none;
     font-size: 20px;
     float: right;
+}
+.footer li img {
+    border-radius: 50%;
 }
 .footer li {
     margin: 0 5px;
