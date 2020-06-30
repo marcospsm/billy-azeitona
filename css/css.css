@@ -167,13 +167,12 @@ a {text-decoration: none !important;}
     .carousel-inner {
         display: flex;
     }
-    .h3-left {
+    .h3-left, .h3-right {
         display: block;
         font-size: 29px;
     }
-    .h3-right {
-        display: block;
-        font-size: 27px;
+    #h3Billy, #h3Azeitona {
+        font-size: 28px !important;
     }
     .content-billy .foto {
         height:100px;
