@@ -214,6 +214,9 @@ a {text-decoration: none !important;}
     .footer ul li {
         font-size: 40px;
     }
+    .img-gato {
+        box-shadow: 1px 1px 30px black;
+    }
     #fotoIgreja {
         height: 740px;
         width: 490px;
