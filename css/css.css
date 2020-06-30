@@ -161,6 +161,9 @@ a {text-decoration: none !important;}
     .content {
         display: none;
     }
+    .img-gato {
+        box-shadow: 1px 1px 30px black;
+    }
     .carousel-inner {
         display: flex;
     }
